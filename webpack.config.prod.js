@@ -8,7 +8,7 @@ require("dotenv").config({ path: __dirname + "/.env" });
 
 module.exports = {
   entry: [path.resolve(__dirname, "src/index.js")],
-  mode: "development",
+  mode: "production",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",

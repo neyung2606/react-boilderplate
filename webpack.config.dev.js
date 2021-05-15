@@ -7,7 +7,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 require("dotenv").config({ path: __dirname + "/.env" });
 
 module.exports = {
-  entry: [path.resolve(__dirname, "src/index.js")],
+  entry: ["@babel/polyfill", path.resolve(__dirname, "src/index.js")],
   mode: "development",
   output: {
     path: path.resolve(__dirname, "dist"),
